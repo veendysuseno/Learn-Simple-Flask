@@ -1,0 +1,19 @@
+<html>
+<head>
+   <title>Demo Flask-WTF</title>
+</head>
+<body>
+   <h2>Demo Flask-WTF</h2>
+   
+   {% if pesan %}
+      <p style="color:red">{{ pesan }}</p>
+   {% endif %}
+   
+   <form method="post">
+      {{ form.namaUser.label }} {{ form.namaUser() }}<br />
+      {{ form.kataSandi.label }} {{ form.kataSandi() }}
+      <p>{{ form.submit() }}</p>
+   </form>
+   
+</body>
+</html>

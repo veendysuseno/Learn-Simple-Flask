@@ -1,0 +1,23 @@
+<html>
+<head>
+   <title>Demo password</title>
+</head>
+<body>
+   <h2>Demo password</h2>
+   
+   {% if pesan %}
+      <p style="color:red;">
+      {{ pesan }}
+      </p>
+   {% endif %}
+   
+   <form action="/" method="post">
+      Nama user:<br />
+      <input type="text" name="namaUser" size="25" /><br />
+      Kata sandi:<br />
+      <input type="password" name="kataSandi" size="25" /><br />
+      <p><input type="submit"  value="Login" /></p>
+   </form>
+   
+</body>
+</html>

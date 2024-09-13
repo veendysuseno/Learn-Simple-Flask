@@ -1,0 +1,15 @@
+<html>
+<head>
+   <title>Demo Upload File</title>
+</head>
+<body>
+   <h2>Demo Upload File</h2>
+   
+   <form method="post" enctype="multipart/form-data">
+      {{ form.file.label }}<br />
+      {{ form.file() }}<br />
+      <p>{{ form.submit() }}</p>
+   </form>
+   
+</body>
+</html>

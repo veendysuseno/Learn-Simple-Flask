@@ -1,0 +1,20 @@
+<html>
+<head>
+   <title>Demo Session</title>
+</head>
+<body>
+   <h2>Demo Session</h2>
+   
+   {% if msg %}
+      <p style="color:red">{{ msg }}</p>
+   {% endif %}
+      
+   <form action="http://localhost:5000/login" method="post">
+      Username:<br />
+      <input type="text" name="username" /><br />
+      Password:<br />
+      <input type="password" name="password" /><br />
+      <p><input type="submit" value="Login" /></p>
+   </form>
+</body>
+</html>

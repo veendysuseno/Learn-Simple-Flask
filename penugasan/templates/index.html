@@ -1,0 +1,22 @@
+<html>
+<head>
+   <title>Demo Template 3</title>
+</head>
+<body>
+   <h2>Demo Template 3</h2>
+   
+   {# mendefinisikan variabel a #}
+   {% set a = 10 %}
+   
+   {# mendefinisikan variabel navigasi #}
+   {% set navigasi %}
+      <a href="/">Home</a> | 
+      <a href="/kontak">Kontak</a>
+   {% endset%}
+
+   {# memanggil nilai variabel #}   
+   <p>Nilai <strong>a</strong> = {{ a }}</p>
+   <p>Nilai <strong>navigasi</strong> = {{ navigasi }}</p>
+   
+</body>
+</html>

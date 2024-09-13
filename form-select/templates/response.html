@@ -1,0 +1,27 @@
+<html>
+<head>
+   <title>Demo select</title>
+</head>
+<body>
+   <h2>Demo select</h2>
+   <p>Data yang dikirim adalah:</p>
+   
+   Agama: 
+   {% if agama==1 %}
+      Islam
+   {% elif agama==2 %}
+      Protestan
+   {% elif agama==3 %}
+      Katolik
+   {% elif agama==4 %}
+      Hindu
+   {% else %}
+      Budha
+   {% endif %}
+   <br />
+   Bahasa pemrograman yang disukai: 
+   {% for item in bahasa %}
+      {{ item ~ ' '}}
+   {% endfor %}
+</body>
+</html>

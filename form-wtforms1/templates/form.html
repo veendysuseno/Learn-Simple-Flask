@@ -1,0 +1,25 @@
+<html>
+<head>
+   <title>Demo Flask-WTF 1</title>
+</head>
+<body>
+   <h2>Demo Flask-WTF 1</h2>
+   
+   <form method="post">
+      {{ form.nama.label }}<br />
+      {{ form.nama() }}<br />
+      {{ form.alamat.label }}<br />
+      {{ form.alamat() }}<br />
+      {{ form.jenisKelamin.label }}
+      {{ form.jenisKelamin() }}
+      {{ form.agama.label }}<br />
+      {{ form.agama() }}<br />
+      Hobi:<br />
+      {{ form.hobi1() }} {{ form.hobi1.label }} 
+      {{ form.hobi2() }} {{ form.hobi2.label }}
+      {{ form.hobi3() }} {{ form.hobi3.label }}<br />
+      <p>{{ form.submit() }}</p>
+   </form>
+   
+</body>
+</html>

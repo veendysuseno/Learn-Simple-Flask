@@ -1,0 +1,16 @@
+<html>
+<head>
+   <title>Demo Template 6</title>
+</head>
+<body>
+   <h2>Demo Template 6</h2>
+   
+   {# menampilkan setiap elemen di dalam variabel dictionary #}
+   <ul>
+   {% for key, value in dictionary.items() %}
+      <li><a href="{{ key }}">{{ value }}</a></li>
+   {% endfor %}
+   </ul>
+   
+</body>
+</html>

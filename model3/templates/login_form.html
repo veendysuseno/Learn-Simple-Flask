@@ -1,0 +1,17 @@
+<html>
+<head>
+   <title>Demo Model 3</title>
+</head>
+<body>
+   <h2>Demo Model 3</h2>
+   
+   <form action="http://localhost:5000/login" method="post">
+	   {{ model.labels.get('username') }}<br />
+	   <input type="text" name="username" /><br />
+	   {{ model.labels.get('password') }}<br />
+	   <input type="password" name="password" /><br />
+	   <p><input type="submit" value="Login"></p>
+	</form>
+
+</body>
+</html>

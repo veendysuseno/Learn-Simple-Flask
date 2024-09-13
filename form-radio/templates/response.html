@@ -1,0 +1,31 @@
+<html>
+<head>
+   <title>Demo radio</title>
+</head>
+<body>
+   <h2>Demo radio</h2>
+   <p>Data yang dikirim adalah:</p>
+   
+   Nama: {{ nama }}<br />
+   Jenis kelamin: 
+   {% if gender=='P' %}
+      Pria
+   {% else %}
+      Wanita
+   {% endif %}
+   <br />
+   Agama: 
+   {% if agama==1 %}
+      Islam
+   {% elif agama==2 %}
+      Protestan
+   {% elif agama==3 %}
+      Katolik
+   {% elif agama==4 %}
+      Hindu
+   {% else %}
+      Budha
+   {% endif %}
+   
+</body>
+</html>

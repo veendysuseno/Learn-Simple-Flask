@@ -1,0 +1,27 @@
+<html>
+<head>
+   <title>Demo Template 11</title>
+   <script
+      src="{{ url_for('static', filename='functions.js') }}"
+      type="text/javascript">
+   </script>
+</head>
+<body>
+   <h2>Demo Template 11</h2>
+   
+   <p>Contoh penggunaan kode JavaScript di dalam template yang kita buat.</p>
+   
+   {# memanggil fungsi yang ditulis dalam JavaScript #}
+   2 * 3 = 
+   <script language="JavaScript">
+		var result = kali(2,3);
+		document.write(result);
+	</script><br />
+   2 ** 3 =
+   <script language="JavaScript">
+		var result = pangkat(2,3);
+		document.write(result);
+	</script>
+   
+</body>
+</html>

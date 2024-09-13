@@ -1,0 +1,21 @@
+<html>
+<head>
+   <title>Demo Template 5</title>
+</head>
+<body>
+   <h2>Demo Template 5</h2>
+   
+   {# menampilkan nilai variabel a #}
+   Nilai a = {{ a }} <br />
+   
+   {# memeriksa nilai a #}
+   {% if a < 0 %}
+      {{ a }} adalah bilangan negatif.
+   {% elif a == 0 %}
+      Nilai a sama dengan nol.
+   {% else %}
+      {{ a }} adalah bilangan positif.
+   {% endif %}
+   
+</body>
+</html>

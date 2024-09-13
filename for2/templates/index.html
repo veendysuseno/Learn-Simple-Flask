@@ -1,0 +1,27 @@
+<html>
+<head>
+   <title>Demo Template 8</title>
+</head>
+<body>
+   <h2>Demo Template 8</h2>
+   
+   <p>Mengakses data dari tabel di dalam database</p>
+   
+   {# menampilkan setiap elemen di dalam list #}
+   <table border="1">
+      <tr>
+         <th width="50">Kode</th>
+         <th width="150">Nama Produk</th>
+         <th width="100">Harga</th>
+      </tr>
+   {% for baris in data %}
+      <tr>
+         <td>{{ baris[0] }}</td>
+         <td>{{ baris[1] }}</td>
+         <td>{{ baris[2] }}</td>
+      </tr>
+   {% endfor %}
+   </ul>
+   
+</body>
+</html>

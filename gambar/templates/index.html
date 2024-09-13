@@ -1,0 +1,15 @@
+<html>
+<head>
+   <title>Demo Template 12</title>
+</head>
+<body>
+   <h2>Demo Template 12</h2>
+   
+   <p>Contoh menampilkan file gambar
+   yang disimpan di dalam directori <strong>static</strong>.</p>
+   
+   <p><img src="{{ url_for('static', filename='python.jpeg') }}" /></p>
+   <p><img src="{{ url_for('static', filename='flask.png') }}" /></p>
+   
+</body>
+</html>
