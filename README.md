@@ -41,13 +41,13 @@ To set up your development environment, you will need the following tools:
 1. **Clone this repository**:
 
    ```bash
-   git clone https://github.com/your-username/learn-flask-basic.git
+   git clone https://github.com/veendysuseno/Learn-Simple-Flask
    ```
 
 2. Navigate to the project directory:
 
    ```bash
-   cd learn-flask-basic
+   cd Learn-Simple-Flask
    ```
 
 3. Install Flask: Install Flask using pip (Python package installer):
